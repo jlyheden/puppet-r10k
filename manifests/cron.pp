@@ -6,7 +6,7 @@ class r10k::cron(
 ) {
 
   $minute_real = $frequency ? {
-    'UNDEF' => interval(3,60)
+    'UNDEF' => interval(3,60),
     default => $frequency
   }
 
